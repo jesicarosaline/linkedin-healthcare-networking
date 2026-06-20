@@ -5,9 +5,9 @@
 
 ## What this project does
 
-Breaking into a new industry from scratch is hard — especially when you don't have a ready-made network.
+Breaking into a new industry from scratch is hard, especially when you don't have a ready-made network.
 
-As a first-year MBA at Carnegie Mellon's Tepper School of Business, I'm targeting roles in **healthcare growth and strategy** in the U.S. Rather than send generic cold messages, I built a system that identifies the right people, verifies they're currently at active U.S. healthcare companies, and generates a personalized connection message for each one — then sends them automatically on a daily schedule.
+As a first-year MBA at Carnegie Mellon's Tepper School of Business, I'm targeting roles in **healthcare growth and strategy** in the U.S. Rather than send generic cold messages, I built a system that identifies the right people, verifies they're currently at active U.S. healthcare companies, and generates a personalized connection message for each one, then sends them automatically on a daily schedule.
 
 The result: a structured, scalable outreach pipeline that reaches 20 new healthcare professionals per day with messages tailored to each person's company and role.
 
