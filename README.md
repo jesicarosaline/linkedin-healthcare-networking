@@ -15,7 +15,7 @@ The result: a structured, scalable outreach pipeline that reaches 20 new healthc
 ## What I built
 
 ### 1. Prospect list (243 contacts)
-Scraped LinkedIn search results for people working in **growth roles at U.S. healthcare companies** — titles like VP of Growth, Chief Growth Officer, Head of Growth Strategy, and Director of Growth. Extracted name, title, and current employer for each person across multiple pages of search results.
+Scraped LinkedIn search results for people working in **growth roles at U.S. healthcare companies** titles like VP of Growth, Chief Growth Officer, Head of Growth Strategy, and Director of Growth. Extracted name, title, and current employer for each person across multiple pages of search results.
 
 ### 2. Company research & categorization
 For each of the 243 contacts, wrote a one-sentence description of their employer and categorized them by healthcare vertical:
@@ -29,7 +29,7 @@ For each of the 243 contacts, wrote a one-sentence description of their employer
 | Healthcare finance & strategy | Healthcare Growth Partners, Sage Growth Partners |
 
 ### 3. Personalized outreach messages
-Generated a custom ≤300-character LinkedIn connection message for every contact — referencing their specific company, tailored to my background (4 years in health startup growth + finance experience at EY and Medco), and written in a natural, non-salesy tone.
+Generated a custom ≤300-character LinkedIn connection message for every contact to reference their specific company, tailored to my background (4 years in health startup growth + finance experience at EY and Medco), and written in a natural, non-salesy tone.
 
 Message rules applied across all 243:
 - ≤300 characters (hard limit for LinkedIn connection notes)
@@ -38,7 +38,7 @@ Message rules applied across all 243:
 - Verified against a set of approved reference messages
 
 ### 4. Employment verification
-Before sending to anyone, verified every contact is **currently** at a U.S. healthcare company by checking their LinkedIn Experience section — not just the job title in search results, which can be outdated.
+Before sending to anyone, verified every contact is **currently** at a U.S. healthcare company by checking their LinkedIn Experience section (not just the job title in search results, which can be outdated).
 
 Found and corrected 5 records where the company had changed:
 
