@@ -2,7 +2,6 @@
 
 **An AI-assisted outreach system for building a targeted professional network in U.S. healthcare growth.**
 
----
 
 ## What this project does
 
@@ -12,7 +11,6 @@ As a first-year MBA at Carnegie Mellon's Tepper School of Business, I'm targetin
 
 The result: a structured, scalable outreach pipeline that reaches 20 new healthcare professionals per day with messages tailored to each person's company and role.
 
----
 
 ## What I built
 
@@ -31,7 +29,7 @@ For each of the 243 contacts, wrote a one-sentence description of their employer
 | Healthcare finance & strategy | Healthcare Growth Partners, Sage Growth Partners |
 
 ### 3. Personalized outreach messages
-Generated a custom ≤300-character LinkedIn connection message for every contact — referencing their specific company, tailored to my background (4 years in health startup growth in Indonesia + finance experience at EY and Medco), and written in a natural, non-salesy tone.
+Generated a custom ≤300-character LinkedIn connection message for every contact — referencing their specific company, tailored to my background (4 years in health startup growth + finance experience at EY and Medco), and written in a natural, non-salesy tone.
 
 Message rules applied across all 243:
 - ≤300 characters (hard limit for LinkedIn connection notes)
@@ -57,7 +55,6 @@ Removed 5 contacts whose current roles were outside U.S. healthcare (veterinary,
 ### 5. Automated daily sending
 Set up a scheduled task that runs at 3PM ET every day. It finds the next 20 unsent contacts, injects personalized messages into LinkedIn's connection modal (via the Chrome extension + shadow DOM), sends each invitation, and logs the send date back to the Excel file.
 
----
 
 ## Files in this repo
 
@@ -66,7 +63,6 @@ Set up a scheduled task that runs at 3PM ET every day. It finds the next 20 unse
 | `linkedin_growth_healthcare.xlsx` | Full contact list with names, titles, companies, descriptions, messages, and invitation send dates |
 | `ai_task_log.xlsx` | Log of all AI-automated tasks used to build and maintain this project |
 
----
 
 ## Skills demonstrated
 
@@ -75,12 +71,11 @@ Set up a scheduled task that runs at 3PM ET every day. It finds the next 20 unse
 - **Personalization at scale** — 243 unique messages generated and validated against character limits and tone rules
 - **Strategic networking** — structured approach to cold outreach in a target industry, with clear criteria for who qualifies
 
----
 
 ## Background
 
-I'm Jesica Rosaline, an MBA student at Tepper (CMU) focused on healthcare growth strategy and AI implementation. Before Tepper, I spent 4 years in growth at a telehealth and wellness startup in Indonesia, and previously worked in strategy and transactions at EY, Helios Capital, and Medco.
+I'm Jesica Rosaline, an MBA student at Tepper (CMU) focused on healthcare growth strategy and AI implementation. Before Tepper, I spent 4 years in growth at a telehealth startup, and previously worked in strategy and transactions at EY, Helios Capital, and Medco.
 
 This project is part of my effort to build genuine relationships with healthcare growth leaders in the U.S. while I'm in school.
 
-📫 jrosalin@tepper.cmu.edu
+jrosalin@tepper.cmu.edu
