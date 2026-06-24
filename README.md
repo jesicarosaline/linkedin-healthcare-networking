@@ -1,26 +1,28 @@
-# LinkedIn Healthcare Networking Automation
+# LinkedIn Healthcare Networking — Outreach Pipeline
 
-**An AI-assisted outreach system for building a targeted professional network in U.S. healthcare growth.**
+**A structured, AI-assisted system for identifying and personalizing outreach to U.S. healthcare growth professionals.**
 
+---
 
 ## What this project does
 
-Breaking into a new industry from scratch is hard, especially when you don't have a ready-made network.
+Breaking into a new industry from scratch is hard — especially when you don't have a ready-made network.
 
-As a first-year MBA at Carnegie Mellon's Tepper School of Business, I'm targeting roles in **healthcare growth and strategy** in the U.S. Rather than send generic cold messages, I built a system that identifies the right people, verifies they're currently at active U.S. healthcare companies, and generates a personalized connection message for each one, then sends them automatically on a daily schedule.
+As a first-year MBA at Carnegie Mellon's Tepper School of Business, I'm targeting roles in **healthcare growth and strategy** in the U.S. Rather than send generic cold messages to anyone with a healthcare title, I built a pipeline that identifies the right people, scores and segments them by healthcare vertical, verifies their current employment, and generates a personalized outreach message for each one — so that every touchpoint is relevant and specific.
 
-The result: a structured, scalable outreach pipeline that reaches 20 new healthcare professionals per day with messages tailored to each person's company and role.
+The result: a 243-person, fully enriched contact list with tailored messages, organized by category, and ready for a paced daily outreach cadence.
 
+---
 
 ## What I built
 
-### 1. Prospect list (243 contacts)
-Scraped LinkedIn search results for people working in **growth roles at U.S. healthcare companies** titles like VP of Growth, Chief Growth Officer, Head of Growth Strategy, and Director of Growth. Extracted name, title, and current employer for each person across multiple pages of search results.
+### 1. Prospect identification (243 contacts)
+Searched LinkedIn for people in **growth roles at U.S. healthcare companies** — titles like VP of Growth, Chief Growth Officer, Head of Growth Strategy, and Director of Growth. Extracted name, title, and current employer for each person.
 
-### 2. Company research & categorization
-For each of the 243 contacts, wrote a one-sentence description of their employer and categorized them by healthcare vertical:
+### 2. Company research & segmentation
+For each of the 243 contacts, wrote a one-sentence description of their employer and assigned them to a healthcare vertical based on company type:
 
-| Category | Examples |
+| Segment | Examples |
 |---|---|
 | AI / digital health | K Health, Twin Health, Hinge Health |
 | Telehealth | Teladoc, MDI Health, Intercept Telehealth |
@@ -29,20 +31,21 @@ For each of the 243 contacts, wrote a one-sentence description of their employer
 | Healthcare finance & strategy | Healthcare Growth Partners, Sage Growth Partners |
 
 ### 3. Personalized outreach messages
-Generated a custom ≤300-character LinkedIn connection message for every contact to reference their specific company, tailored to my background (4 years in health startup growth + finance experience at EY and Medco), and written in a natural, non-salesy tone.
+Generated a custom ≤300-character LinkedIn connection message for every contact — referencing their specific company, tailored to my background (4 years in health startup growth in Indonesia + finance experience at EY and Medco), and written in a natural, non-salesy tone.
 
-Message rules applied across all 243:
-- ≤300 characters (hard limit for LinkedIn connection notes)
-- No em dashes, no buzzwords, no generic openers
-- Company name cleaned (no "LLC", "Inc.", "(Past)", etc.)
-- Verified against a set of approved reference messages
+Message rules enforced across all 243:
+- ≤300 characters (LinkedIn connection note limit)
+- No buzzwords, no generic openers
+- Company name cleaned before use (no legal suffixes, no "(Past)" artifacts)
+- Segment-specific templates — telehealth contacts get a different angle than finance contacts
+- Verified against a set of approved reference messages for tone and length
 
 ### 4. Employment verification
-Before sending to anyone, verified every contact is **currently** at a U.S. healthcare company by checking their LinkedIn Experience section (not just the job title in search results, which can be outdated).
+Before finalizing anyone for outreach, verified that every contact is **currently** at a U.S. healthcare company — not just that they held a healthcare role at some point.
 
 Found and corrected 5 records where the company had changed:
 
-| Person | Old record | Verified current employer |
+| Person | Stale record | Current employer |
 |---|---|---|
 | Evan M. | LettyAI (inactive) | Viper Partners |
 | Nikhil M. | Silversmith Capital (past) | F-Prime |
@@ -50,32 +53,37 @@ Found and corrected 5 records where the company had changed:
 | Shawn P. | Agape Care Group (past) | Innovation Healthcare Consulting |
 | Mary Beth T. | New Innovations (past) | Ebix |
 
-Removed 5 contacts whose current roles were outside U.S. healthcare (veterinary, general DTC brands, non-healthcare tech).
+Removed 5 contacts whose current roles were outside U.S. healthcare (veterinary, general consumer brands, non-healthcare tech).
 
-### 5. Automated daily sending
-Set up a scheduled task that runs at 3PM ET every day. It finds the next 20 unsent contacts, injects personalized messages into LinkedIn's connection modal (via the Chrome extension + shadow DOM), sends each invitation, and logs the send date back to the Excel file.
+### 5. Outreach cadence design
+Structured the contact list for a paced outreach cadence — 20 contacts per day, sequenced to avoid sending everything at once and allow time for responses before the next batch goes out. Each batch is pre-organized so outreach stays consistent without requiring daily re-prioritization.
 
+---
 
 ## Files in this repo
 
 | File | What it contains |
 |---|---|
-| `linkedin_growth_healthcare.xlsx` | Full contact list with names, titles, companies, descriptions, messages, and invitation send dates |
+| `linkedin_growth_healthcare.xlsx` | Full contact list: names, titles, companies, segment categories, company descriptions, personalized messages, and outreach status |
 | `ai_task_log.xlsx` | Log of all AI-automated tasks used to build and maintain this project |
+| `growth_healthcare_li_skill/SKILL.md` | Reusable instructions for repeating this workflow on any new LinkedIn search — prospect extraction, enrichment, segmentation, message generation, and verification |
 
+---
 
 ## Skills demonstrated
 
-- **Workflow automation** — end-to-end pipeline from data collection to scheduled execution, with no manual steps after setup
-- **Data quality** — employment verification loop that catches and corrects stale records before outreach
-- **Personalization at scale** — 243 unique messages generated and validated against character limits and tone rules
-- **Strategic networking** — structured approach to cold outreach in a target industry, with clear criteria for who qualifies
+- **Lead scoring & segmentation** — categorized 243 prospects by healthcare vertical to match message angle to audience
+- **Data quality** — employment verification loop that catches stale records before outreach goes out
+- **Personalization at scale** — 243 unique messages generated and validated against character limits, tone rules, and segment-specific templates
+- **Outreach strategy** — paced cadence design, structured pipeline with clear criteria for who qualifies and why
+- **AI-assisted workflow design** — built a reusable skill that can reproduce this pipeline for any future search
 
+---
 
 ## Background
 
-I'm Jesica Rosaline, an MBA student at Tepper (CMU) focused on healthcare growth strategy and AI implementation. Before Tepper, I spent 4 years in growth at a telehealth startup, and previously worked in strategy and transactions at EY, Helios Capital, and Medco.
+I'm Jesica Rosaline, an MBA student at Tepper (CMU) focused on healthcare growth strategy and AI implementation. Before Tepper, I spent 4 years in growth at a telehealth and wellness startup in Indonesia, and previously worked in strategy and transactions at EY, Helios Capital, and Medco.
 
 This project is part of my effort to build genuine relationships with healthcare growth leaders in the U.S. while I'm in school.
 
-jrosalin@tepper.cmu.edu
+📫 jrosalin@tepper.cmu.edu
